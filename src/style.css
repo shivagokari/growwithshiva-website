@@ -8,6 +8,30 @@
   --font-sans: 'Montserrat', sans-serif;
 }
 
+@layer utilities {
+  @keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-50% - 12px)); }
+  }
+  .marquee-content {
+    display: flex;
+    width: max-content;
+    animation: slide 40s linear infinite;
+  }
+  .marquee-content:hover {
+    animation-play-state: paused;
+  }
+  .testi-card {
+    width: calc(100vw - 2rem);
+    flex-shrink: 0;
+    white-space: normal;
+  }
+  @media (min-width: 768px) {
+    .testi-card {
+      width: 400px;
+    }
+  }
+}
 @layer base {
   html {
     scroll-behavior: smooth;
