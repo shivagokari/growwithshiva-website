@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/final-logo.png" />
@@ -162,7 +162,7 @@
               <div class="absolute -top-4 -left-4 w-24 h-24 bg-accent/30 rounded-xl z-0"></div>
               <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-text border border-gray-200 rounded-2xl z-0"></div>
               <div class="aspect-[4/3] rounded-2xl bg-gray-100 relative z-10 overflow-hidden shadow-2xl border border-gray-100">
-                <img src="/office.png" alt="GrowWithShiva Digital Marketing Office" class="w-full h-full object-cover">
+                <img src="/office.jpg" alt="GrowWithShiva Digital Marketing Office" loading="lazy" class="w-full h-full object-cover">
               </div>
             </div>
             
@@ -202,58 +202,99 @@
             <p class="text-lg text-gray-600">Don't just take our word for it. Here is what our clients have to say.</p>
           </div>
           
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Testimonial 1 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
-              <div class="text-accent mb-6">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.017 21L16.411 14.182C17.418 10.643 19.98 9.539 24 9.083V2C18.232 2 13.918 4.411 12.339 9.878L10 21H14.017ZM2.01697 21L4.41097 14.182C5.41897 10.643 7.97997 9.539 12 9.083V2C6.23197 2 1.91797 4.411 0.338974 9.878L-0.000026226 21H2.01697Z" />
-                </svg>
-              </div>
-              <p class="text-gray-600 mb-6 font-medium italic">"GrowWithShiva transformed our local reach. The Google Maps optimization and targeted ads brought in a 3x increase in foot traffic within just two months. Highly recommended in Hyderabad!"</p>
-              <div class="flex items-center">
-                <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-4">R</div>
-                <div>
-                  <h4 class="font-bold text-text">Rahul R.</h4>
-                  <p class="text-sm text-gray-500">Retail Store Owner</p>
+          <div class="overflow-hidden relative w-full pt-4 pb-8" id="marquee-container">
+            <div class="marquee-content gap-6" id="marquee-track">
+              <!-- Testimonial 1 -->
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative testi-card">
+                <div class="text-accent mb-6">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 21L16.411 14.182C17.418 10.643 19.98 9.539 24 9.083V2C18.232 2 13.918 4.411 12.339 9.878L10 21H14.017ZM2.01697 21L4.41097 14.182C5.41897 10.643 7.97997 9.539 12 9.083V2C6.23197 2 1.91797 4.411 0.338974 9.878L-0.000026226 21H2.01697Z" />
+                  </svg>
+                </div>
+                <p class="text-gray-600 mb-6 font-medium italic">"GrowWithShiva transformed our local reach. The Google Maps optimization and targeted ads brought in a 3x increase in foot traffic within just two months. Highly recommended in Hyderabad!"</p>
+                <div class="flex items-center">
+                  <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-4">R</div>
+                  <div>
+                    <h4 class="font-bold text-text">Rahul R.</h4>
+                    <p class="text-sm text-gray-500">Retail Store Owner</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <!-- Testimonial 2 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
-              <div class="text-accent mb-6">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.017 21L16.411 14.182C17.418 10.643 19.98 9.539 24 9.083V2C18.232 2 13.918 4.411 12.339 9.878L10 21H14.017ZM2.01697 21L4.41097 14.182C5.41897 10.643 7.97997 9.539 12 9.083V2C6.23197 2 1.91797 4.411 0.338974 9.878L-0.000026226 21H2.01697Z" />
-                </svg>
-              </div>
-              <p class="text-gray-600 mb-6 font-medium italic">"They promised a custom website in 4 days, and they delivered. Not only that, but the design is gorgeous and it loads instantly. It's the best digital investment we've made."</p>
-              <div class="flex items-center">
-                <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-4">S</div>
-                <div>
-                  <h4 class="font-bold text-text">Sneha M.</h4>
-                  <p class="text-sm text-gray-500">Service Provider</p>
+              
+              <!-- Testimonial 2 -->
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative testi-card">
+                <div class="text-accent mb-6">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 21L16.411 14.182C17.418 10.643 19.98 9.539 24 9.083V2C18.232 2 13.918 4.411 12.339 9.878L10 21H14.017ZM2.01697 21L4.41097 14.182C5.41897 10.643 7.97997 9.539 12 9.083V2C6.23197 2 1.91797 4.411 0.338974 9.878L-0.000026226 21H2.01697Z" />
+                  </svg>
+                </div>
+                <p class="text-gray-600 mb-6 font-medium italic">"They promised a custom website in 4 days, and they delivered. Not only that, but the design is gorgeous and it loads instantly. It's the best digital investment we've made."</p>
+                <div class="flex items-center">
+                  <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-4">S</div>
+                  <div>
+                    <h4 class="font-bold text-text">Sneha M.</h4>
+                    <p class="text-sm text-gray-500">Service Provider</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <!-- Testimonial 3 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
-              <div class="text-accent mb-6">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.017 21L16.411 14.182C17.418 10.643 19.98 9.539 24 9.083V2C18.232 2 13.918 4.411 12.339 9.878L10 21H14.017ZM2.01697 21L4.41097 14.182C5.41897 10.643 7.97997 9.539 12 9.083V2C6.23197 2 1.91797 4.411 0.338974 9.878L-0.000026226 21H2.01697Z" />
-                </svg>
+              
+              <!-- Testimonial 3 -->
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative testi-card">
+                <div class="text-accent mb-6">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 21L16.411 14.182C17.418 10.643 19.98 9.539 24 9.083V2C18.232 2 13.918 4.411 12.339 9.878L10 21H14.017ZM2.01697 21L4.41097 14.182C5.41897 10.643 7.97997 9.539 12 9.083V2C6.23197 2 1.91797 4.411 0.338974 9.878L-0.000026226 21H2.01697Z" />
+                  </svg>
+                </div>
+                <p class="text-gray-600 mb-6 font-medium italic">"Our Meta ad ROI skyrocketed after partnering with GrowWithShiva. They truly understand targeting and ad creatives. A highly professional team to work with."</p>
+                <div class="flex items-center">
+                  <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-4">K</div>
+                  <div>
+                    <h4 class="font-bold text-text">Karthik Y.</h4>
+                    <p class="text-sm text-gray-500">E-commerce Founder</p>
+                  </div>
+                </div>
               </div>
-              <p class="text-gray-600 mb-6 font-medium italic">"Our Meta ad ROI skyrocketed after partnering with GrowWithShiva. They truly understand targeting and ad creatives. A highly professional team to work with."</p>
-              <div class="flex items-center">
-                <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-4">K</div>
-                <div>
-                  <h4 class="font-bold text-text">Karthik Y.</h4>
-                  <p class="text-sm text-gray-500">E-commerce Founder</p>
+
+              <!-- Testimonial 4 -->
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative testi-card">
+                <div class="text-accent mb-6">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 21L16.411 14.182C17.418 10.643 19.98 9.539 24 9.083V2C18.232 2 13.918 4.411 12.339 9.878L10 21H14.017ZM2.01697 21L4.41097 14.182C5.41897 10.643 7.97997 9.539 12 9.083V2C6.23197 2 1.91797 4.411 0.338974 9.878L-0.000026226 21H2.01697Z" />
+                  </svg>
+                </div>
+                <p class="text-gray-600 mb-6 font-medium italic">"GrowWithShiva redesigned our platform to look incredibly modern and it drives much better conversions. Best agency decision we have made!"</p>
+                <div class="flex items-center">
+                  <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-4">A</div>
+                  <div>
+                    <h4 class="font-bold text-text">Anjali D.</h4>
+                    <p class="text-sm text-gray-500">Tech Entrepreneur</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 5 -->
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative testi-card">
+                <div class="text-accent mb-6">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 21L16.411 14.182C17.418 10.643 19.98 9.539 24 9.083V2C18.232 2 13.918 4.411 12.339 9.878L10 21H14.017ZM2.01697 21L4.41097 14.182C5.41897 10.643 7.97997 9.539 12 9.083V2C6.23197 2 1.91797 4.411 0.338974 9.878L-0.000026226 21H2.01697Z" />
+                  </svg>
+                </div>
+                <p class="text-gray-600 mb-6 font-medium italic">"Their Google Ads strategy reduced our Cost-Per-Click by half within a month while retaining top-quality leads. Brilliant work."</p>
+                <div class="flex items-center">
+                  <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-xl mr-4">P</div>
+                  <div>
+                    <h4 class="font-bold text-text">Pranav R.</h4>
+                    <p class="text-sm text-gray-500">Real Estate Broker</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <script>
+            // Automatically clone the testimonial track to create an infinite scroll loop
+            const track = document.getElementById('marquee-track');
+            track.innerHTML += track.innerHTML;
+          </script>
         </div>
       </section>
 
